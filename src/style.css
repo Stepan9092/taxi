@@ -132,12 +132,12 @@ html {
   height: 30px;
   right: 25px;
   top: 20px;
-  background-image: url(/public/menu-btn.png);
+  background-image: url(/menu-btn.png);
   background-size: cover;
 }
 
 .header__button-close {
-  background-image: url(/public/close-btn.png);
+  background-image: url(/close-btn.png);
 }
 
 .header__contacts {
@@ -449,6 +449,7 @@ li::before {
   margin-top: 5px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
@@ -475,7 +476,7 @@ li::before {
     gap: 20px;
   }
   .nav {
-    gap: 10px;
+    gap: 20px;
   }
   .header__contacts {
     display: none;
@@ -502,6 +503,7 @@ li::before {
     svg {
       display: none;
     }
+    z-index: 1;
   }
   .header__nav {
     position: absolute;
@@ -553,6 +555,9 @@ li::before {
   }
   .conditions__block {
     flex-direction: column;
+  }
+  .contacts__block {
+    padding: 10px;
   }
 }
 
