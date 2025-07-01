@@ -15,6 +15,11 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Работа водителем такси в Минске</title>
+    <meta
+      name="description"
+      content="Требуются водители такси ! Высокий доход, свободный график, ежедневные выплаты. Присоединяйтесь!"
+    />
+    <meta name="keywords" content="Водитель такси, работа, Минск" />
   </head>
   <body>
     <header class="header">
@@ -26,9 +31,6 @@
         <polygon fill="white" points="0,100 50, 0 100,100" />
       </svg>
       <div class="container header__block">
-        <a href="#" class="header__logo">
-          <img className="logo" src="./public/logo.png" alt="logo" />
-        </a>
         <div class="header__nav">
           <nav class="nav">
             <a href="#partner" class="nav__link splitUnderline"
@@ -43,10 +45,32 @@
             <a href="#contacts" class="nav__link splitUnderline">Контакты</a>
           </nav>
           <div class="header__contacts">
-            <a href="tel:+375111111111" class="header__contacts-phone">
-              <span class="header__contacts-number">+375 (11) 111-11-11 </span>
-              <!-- <span class="header__contacts-label">(для водителей на своем авто)</span> -->
-            </a>
+            <div class="header__contacts-phone">
+              <a href="tel:+375111111111">
+                <span class="header__contacts-number"
+                  >+375 (29) 595-85-25
+                </span>
+              </a>
+              <a href="https://t.me/+375295958525" target="_blank">
+                <img
+                  class="header__socialIcon"
+                  src="/telegram.svg"
+                  alt="telegram"
+                />
+              </a>
+              <a href="viber://chat?number=+375295958525" target="_blank">
+                <img
+                  class="header__socialIcon"
+                  class=""
+                  src="/viber.svg"
+                  alt="viber"
+                />
+              </a>
+            </div>
+
+            <span class="header__contacts-label"
+              >(Минск, пер М.Богдановича, д.52, оф. 2 )</span
+            >
           </div>
         </div>
         <button class="header__button"></button>
@@ -56,7 +80,6 @@
       <div class="container block">
         <div class="main__block">
           <div>
-            <h2 class="main__title">Такси Командир</h2>
             <h1 class="main__heading heading-block">
               Открой для себя перспективную работу водителем такси — высокая
               оплата, свободный график и забота о каждом сотруднике
@@ -65,7 +88,7 @@
             <div class="main__text">Работаем в Минске и Барановичах</div>
             <a href="#conditions" class="button main__button">Узнать условия</a>
           </div>
-          <img class="main__image" src="./public/image.png" alt="car image" />
+          <img class="main__image" src="/image.png" alt="car image" />
         </div>
       </div>
     </main>
@@ -82,11 +105,15 @@
                 уверенными.
               </p>
             </div>
-            <img class="driver__image" src="./public/driver.jpeg" alt="driver" />
+            <img class="driver__image" src="/driver.jpeg" alt="driver" />
             <div class="driver__textBlock">
-              <h2 class="driver__blockHeading">Круглосуточная поддержка</h2>
+              <h2 class="driver__blockHeading">
+                Поддержка и сопровождение на всех этапах
+              </h2>
               <p class="driver__text">
-                Мы всегда на связи и готовы поддержать на каждом этапе.
+                Мы обеспечиваем информационную и профессиональную поддержку с
+                первого дня! Помощь с оформлением, прохождением курсов такси и
+                КПК, консультации по всем возникающим вопросам.
               </p>
             </div>
           </div>
@@ -101,10 +128,10 @@
             условиями труда.
           </p>
           <div class="partner__cars">
-            <img class="partner__car" src="./public/car.png" alt="car" />
-            <img class="partner__car" src="./public/car.png" alt="car" />
-            <img class="partner__car" src="./public/car.png" alt="car" />
-            <img class="partner__car" src="./public/car.png" alt="car" />
+            <img class="partner__car" src="/car.png" alt="car" />
+            <img class="partner__car" src="/car.png" alt="car" />
+            <img class="partner__car" src="/car.png" alt="car" />
+            <img class="partner__car" src="/car.png" alt="car" />
           </div>
         </div>
       </div>
@@ -250,21 +277,26 @@
         <h2 class="heading-block conditions__heading">Наши условия</h2>
         <div class="conditions__block">
           <div class="conditions__item">
-            <h3 class="conditions__itemHeading">
+            <!-- <h3 class="conditions__itemHeading">
               Условия работы на авто компании
-            </h3>
+            </h3> -->
             <ul class="conditions__list">
-              <li>Доход до 45%</li>
+              <li>Гибкий % парка</li>
+              <li>Возможна работа на проценте</li>
+              <li>График работы: Индивидуальный</li>
+              <li>Стабильные выплаты каждую неделю</li>
               <li>Удерживаем и уплачиваем подоходный налог</li>
               <li>Комиссия с чаевых 0%</li>
-              <li>Выплата дохода ЕЖЕДНЕВНО</li>
-              <li>График работы: Индивидуальный</li>
-              <li>Возможен вахтовый метод (жилье предоставляем)</li>
+              <li>Работаем строго по законодательству РБ</li>
+              <li>Бонусы за привлечённых водителей</li>
               <li>Тарифы: Эконом, Комфорт, Комфорт+, Детский, Доставка</li>
+              <li>
+                Любая служба такси! Подключаем ко всем сервисам по всей Беларуси
+              </li>
             </ul>
             <!-- <button class="button">Стать водителем</button> -->
           </div>
-          <div class="conditions__item">
+          <!-- <div class="conditions__item">
             <h3 class="conditions__itemHeading">
               Условия работы на своем авто
             </h3>
@@ -287,8 +319,7 @@
               <li>Комиссия 4,9%</li>
               <li>Выплаты каждый день</li>
             </ul>
-            <!-- <button class="button">Стать водителем</button> -->
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -299,18 +330,31 @@
           <div class="contacts__block">
             <div class="contacts__item">
               <p class="contacts__title">
-                Телефон для водителей на своем авто:
+                Телефон:
               </p>
               <div class="contacts__data">
-                <a class="contacts__link contacts__tel" href="tel:+375111111111"
-                  >+375 (11) 111-11-11</a
+                <a class="contacts__link contacts__tel" href="tel:+375295958525"
+                  >+375 (29) 595-85-25</a
                 >
-                <span class="contacts__text"
-                  >(Telegram / Viber / WhatsApp)</span
-                >
+                <span class="contacts__text">(Telegram / Viber)</span>
+                <a href="https://t.me/+375295958525" target="_blank">
+                  <img
+                    class="contacts__socialIcon"
+                    src="/telegram.svg"
+                    alt="telegram"
+                  />
+                </a>
+                <a href="viber://chat?number=+375295958525" target="_blank">
+                  <img
+                    class="contacts__socialIcon"
+                    class=""
+                    src="/viber.svg"
+                    alt="viber"
+                  />
+                </a>
               </div>
             </div>
-            <div class="contacts__item">
+            <!-- <div class="contacts__item">
               <p class="contacts__title">E-mail:</p>
               <div class="contacts__data">
                 <a
@@ -319,12 +363,12 @@
                   >infotaxiiiii.by</a
                 >
               </div>
-            </div>
+            </div> -->
             <div class="contacts__item">
               <p class="contacts__title">Адрес:</p>
               <div class="contacts__data">
                 <p class="contacts__text">
-                  Беларусь, г. Минск, ул. Тимирязева 2333311
+                  Беларусь, г. Минск, пер М.Богдановича, д.52, оф. 2
                 </p>
               </div>
             </div>
