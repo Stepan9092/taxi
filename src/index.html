@@ -23,12 +23,13 @@
     />
     <meta name="keywords" content="Водитель такси, работа, Минск, Беларусь" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./public/image.png" />
+    <meta property="og:image" content="https://tritax.by/image.png" />
     <meta
       property="og:description"
       content="Требуются водители такси! Высокий доход, свободный график, еженедельные выплаты. Присоединяйтесь!"
     />
     <meta property="og:title" content="Работа водителем такси" />
+    <meta property="og:url" content="https://tritax.by" />
   </head>
 
   <body>
@@ -56,7 +57,7 @@
           </nav>
           <div class="header__contacts">
             <div class="header__contacts-phone">
-              <a href="tel:+375111111111">
+              <a href="tel:+375295958525">
                 <span class="header__contacts-number"
                   >+375 (29) 595-85-25
                 </span>
@@ -95,6 +96,11 @@
             </button>
           </div>
           <img class="main__image" src="/image.png" alt="car image" />
+          <div class="main__phone">
+            <a class="main__button-phone" href="tel:+375295958525">
+              <span class="main__number">+375 (29) 595-85-25 </span>
+            </a>
+          </div>
         </div>
       </div>
     </main>
@@ -341,7 +347,9 @@
       </div>
     </div>
     <div id="modal" class="modal">
+
       <div id="modal-content" class="modal__content">
+        <span class="loader"></span>
         <button id="modal__close" class="modal__close"></button>
         <h2 class="modal__heading">Оставить заявку</h2>
         <p class="modal__text">
@@ -372,6 +380,9 @@
           <p id="phone-error" class="form__error">
             Неправильно введен телефон. Используйте формат: "+375XXXXXXXXX"
           </p>
+          <p id="request-error" class="form__error">
+            Произошла ошибка. Попробуйте ещё раз!
+          </p>
           <input id="submit" class="button" type="submit" />
         </form>
         <p class="modal__text">
@@ -388,6 +399,49 @@
         </div>
       </div>
     </div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
+
+      ym(103328340, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/103328340"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>

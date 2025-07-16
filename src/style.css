@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* min-width: 320px; */
 }
 
 * {
@@ -38,6 +39,10 @@ html {
 
 .button:active {
   background-color: #dd104a;
+}
+
+.button:disabled {
+  background-color: #383838;
 }
 
 .header__logo {
@@ -201,16 +206,13 @@ html {
   margin-top: 20px;
 }
 
+.main__phone {
+  display: none;
+}
+
 .heading-block {
   font-size: 40px;
   font-weight: 600;
-}
-
-.main__title {
-  margin-top: 80px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fbac03;
 }
 
 .main__image {
@@ -491,11 +493,18 @@ li::before {
   background-color: #3838388c;
 }
 
+.modal__event-none {
+  pointer-events: none;
+}
+
+.modal-brightness {
+  filter: brightness(0.9);
+}
+
 .modal__heading {
   font-size: 30px;
   font-weight: 500;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
 .modal__text {
@@ -608,6 +617,61 @@ li::before {
   display: inline-block;
 }
 
+.loader {
+  color: #fbac03;
+  font-size: 15px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+  display: none;
+}
+
+.loader-on {
+  display: block;
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
 @media (max-width: 900px) {
   .header__content {
     gap: 20px;
@@ -622,8 +686,23 @@ li::before {
     flex-direction: column-reverse;
   }
   .main__image {
-    margin-top: 70px;
+    margin-top: 10px;
     max-width: 100%;
+  }
+  .main__phone {
+    margin-top: 0px;
+    display: block;
+  }
+  .main__button-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fbac03;
+    padding: 10px 15px;
+    border: 2px solid #fbac03;
+    border-radius: 22px;
   }
   .advantages__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -645,11 +724,9 @@ li::before {
   html {
     scroll-padding: 50px 0 0 0;
   }
-
   .heading-block {
     font-size: 32px;
   }
-
   .header {
     position: fixed;
     top: 0;
@@ -675,6 +752,7 @@ li::before {
     padding: 20px;
   }
   .header__contacts {
+    margin-bottom: 30px;
     display: block;
   }
   .nav {
@@ -699,14 +777,12 @@ li::before {
   .header__nav-open {
     right: 0;
   }
-  .main__title {
-    margin-top: 0;
+  .main__phone {
+    margin-top: 40px;
   }
-
   .partner__cars {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .partner {
     padding-left: 15px;
     padding-right: 15px;
@@ -745,5 +821,19 @@ li::before {
 @media (max-width: 580px) {
   .advantages__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .main__button-phone {
+    font-size: 24px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__button-phone {
+    font-size: 20px;
+    padding: 8px 10px;
   }
 }
