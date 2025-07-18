@@ -57,7 +57,12 @@
           </nav>
           <div class="header__contacts">
             <div class="header__contacts-phone">
-              <a href="tel:+375295958525">
+              <a class="header__phone-link" href="tel:+375295958525">
+                <img
+                  class="header__socialIcon"
+                  src="/mts-icon.png"
+                  alt="operator icon"
+                />
                 <span class="header__contacts-number"
                   >+375 (29) 595-85-25
                 </span>
@@ -84,22 +89,29 @@
     <main class="main">
       <div class="container block">
         <div class="main__block">
-          <div>
-            <h1 class="main__heading heading-block">
-              Открой для себя перспективную работу водителем такси — высокая
-              оплата, свободный график и забота о каждом сотруднике
-              гарантированы!
-            </h1>
-            <div class="main__text">Работаем в Минске и по всей Беларуси!</div>
-            <button id="main-button" class="button main__button">
-              Стать водителем
-            </button>
-          </div>
-          <img class="main__image" src="/image.png" alt="car image" />
           <div class="main__phone">
             <a class="main__button-phone" href="tel:+375295958525">
               <span class="main__number">+375 (29) 595-85-25 </span>
             </a>
+          </div>
+          <div class="main__flex-item">
+            <h1 class="main__heading heading-block">
+              Работа в Яндекс такси и других службах — высокая оплата, свободный
+              график, гибкий % парка!
+            </h1>
+            <div class="main__text">
+              Работаем в Минске и по всей Беларуси! Своя машина или аренда!
+            </div>
+            <button id="main-button" class="button main__button">
+              Стать водителем
+            </button>
+          </div>
+          <div class="main__flex-item">
+            <p class="main__heading heading-block">Аренда от 300 рублей</p>
+            <div class="main__images">
+              <img class="main__image" src="/car1.jpg" alt="car image" />
+              <img class="main__image" src="/car2.jpg" alt="car image" />
+            </div>
           </div>
         </div>
       </div>
@@ -313,9 +325,17 @@
             <div class="contacts__item">
               <p class="contacts__title">Телефон:</p>
               <div class="contacts__data">
-                <a class="contacts__link contacts__tel" href="tel:+375295958525"
-                  >+375 (29) 595-85-25</a
+                <a
+                  class="contacts__link contacts__tel"
+                  href="tel:+375295958525"
                 >
+                  <img
+                    class="contacts__socialIcon"
+                    src="/mts-icon.png"
+                    alt="operator icon"
+                  />
+                  <span>+375 (29) 595-85-25</span>
+                </a>
                 <span class="contacts__text">(Telegram / Viber)</span>
                 <a href="https://t.me/+375295958525" target="_blank">
                   <img
@@ -347,7 +367,6 @@
       </div>
     </div>
     <div id="modal" class="modal">
-
       <div id="modal-content" class="modal__content">
         <span class="loader"></span>
         <button id="modal__close" class="modal__close"></button>
@@ -389,7 +408,14 @@
           Или свяжитесь с нами самостоятельно — мы всегда на связи!
         </p>
         <div class="modal__contacts">
-          <a class="modal__tel" href="tel:+375295958525">+375 (29) 595-85-25</a>
+          <a class="modal__tel" href="tel:+375295958525">
+            <img
+              class="modal__socialIcon"
+              src="/mts-icon.png"
+              alt="operator icon"
+            />
+            <span>+375 (29) 595-85-25</span>
+          </a>
           <a href="https://t.me/+375295958525" target="_blank">
             <img class="modal__socialIcon" src="/telegram.svg" alt="telegram" />
           </a>
